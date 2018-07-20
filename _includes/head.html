@@ -85,9 +85,11 @@
   {% endif %}
 
   {% if page.share-img %}
-  <meta property="og:image" content="{{ page.share-img }}" />
+    <meta property="og:image" content="{{ page.share-img }}" />
   {% elsif page.bigimg %}
-  <meta property="og:image" content="{{ site.url }}{{ page.bigimg }}" />
+    <meta property="og:image" content="{{ site.url }}{{ page.bigimg }}" />
+    <meta property="og:image:width" content="474" />
+    <meta property="og:image:height" content="269" />
   {% endif %}
 
   <link rel="shortcut icon" href="{{ site.favicon }}" >
