@@ -2,7 +2,7 @@
 layout: post
 title:  "Linh Quy Pháp Ấn"
 date:   2016-7-9 00:11:33 +0700
-categories: Backpacking
+tags: [backpacking]
 ---
 
 Có lẽ đã khá nhiều bạn biết về nơi đây, có thể các bạn đến hoặc chưa đến nhưng ít nhiều các bạn cũng đã đọc các bài review về nơi này. Thật sự hiện tại có rất nhiều bài reivew về nơi này, nhưng hầu hết chỉ là các bài giới thiệu quang cảnh, các hình ảnh, hướng dẫn đường đi mà không mang nhiều nội dung về văn hóa nơi đây, hoặc có nhiều nội dung mâu thuẫn nhau giữa các bài viết.

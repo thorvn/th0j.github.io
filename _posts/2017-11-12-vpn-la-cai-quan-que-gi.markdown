@@ -2,7 +2,7 @@
 layout: post
 title:  "VPN là cái quần què gì?"
 date:   2017-11-12 00:11:33 +0700
-categories: Coding
+tags: [coding]
 ---
 VPN (Virtual Private Network) thì có lẽ ko còn ai xa lạ gì nữa, ai ko biết thì gõ Google trong 3s là ra thôi. Nhưng tại sao mình lại viết bài viết này?
 

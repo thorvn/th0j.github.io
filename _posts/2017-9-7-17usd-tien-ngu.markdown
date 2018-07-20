@@ -2,7 +2,7 @@
 layout: post
 title:  "17 USD tiền ngu?"
 date:   2017-09-07 00:11:33 +0700
-categories: Coding
+tags: [coding]
 ---
 
 Chuyện là nay muốn tập tành Devops á mà nên mua VPS về nghịch chơi.

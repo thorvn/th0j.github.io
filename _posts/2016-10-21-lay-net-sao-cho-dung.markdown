@@ -2,7 +2,7 @@
 layout: post
 title:  "Lấy nét sao cho đúng?"
 date:   2016-10-21 00:11:33 +0700
-categories: Photography
+tags: [photography]
 ---
 
 ### Phương pháp 1: Lấy nét trước bố cục sau

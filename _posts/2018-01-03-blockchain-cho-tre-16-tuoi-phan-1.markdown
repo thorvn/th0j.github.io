@@ -2,7 +2,8 @@
 layout: post
 title:  "Blockchain cho trẻ 16 tuổi"
 date:   2018-01-03 00:11:33 +0700
-categories: Coding
+bigimg: /img/path.jpg
+tags: [coding]
 ---
 
 Einstein có một câu nói rất nổi tiếng: "Nếu bạn không thể giải thích cho trẻ 6 tuổi hiểu thì bạn cũng không hiểu gì cả?"
