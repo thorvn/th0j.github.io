@@ -3,6 +3,7 @@ layout: post
 title:  "17 USD tiền ngu?"
 date:   2017-09-07 00:11:33 +0700
 bigimg: /img/17usd.jpg
+share-img: /img/17usd.jpg
 tags: [coding]
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Tôi đã speedup thời gian build docker cho Rails như thế nào?"
 date:   2017-10-11 00:11:33 +0700
 bigimg: /img/docker-banner.jpg
+share-img: /img/docker-banner.jpg
 tags: [coding]
 ---
 Việc build docker cho Rails thì có rất nhiều bài viết hướng dẫn cho các bạn nhưng việc tối ưu cho nó thì mình chưa tìm thấy bài viết nào cả nên đây cũng là nguyên nhân chính mà tôi viết bài viết này.

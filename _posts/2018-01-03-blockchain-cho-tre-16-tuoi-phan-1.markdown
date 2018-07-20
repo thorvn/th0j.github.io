@@ -3,6 +3,7 @@ layout: post
 title:  "Blockchain cho trẻ 16 tuổi"
 date:   2018-01-03 00:11:33 +0700
 bigimg: /img/blockchain.jpg
+share-img: /img/blockchain.jpg
 tags: [coding]
 ---
 

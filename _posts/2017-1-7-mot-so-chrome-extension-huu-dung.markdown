@@ -3,6 +3,7 @@ layout: post
 title:  "Một số chrome extension hữu dụng mà tôi đang sử dụng"
 date:   2017-1-7 00:11:33 +0700
 bigimg: /img/chrome.jpg
+share-img: /img/chrome.jpg
 tags: [coding]
 ---
 Trình duyệt Chrome khá là phổ biến với đa số mọi người và cũng là một trình duyệt yêu thích của tôi. Hôm nay tôi sẽ giới thiệu cho các bạn một số tiện ích khá là hữu dụng mà tôi đang sử dụng.

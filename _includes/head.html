@@ -85,11 +85,9 @@
   {% endif %}
 
   {% if page.share-img %}
-    <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif page.bigimg %}
-    <meta property="og:image" content="{{ site.url }}{{ page.bigimg }}" />
-    <meta property="og:image:width" content="474" />
-    <meta property="og:image:height" content="269" />
+  <meta property="og:image" content="{{ page.share-img }}" />
+  {% elsif site.avatar %}
+  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
 
   <link rel="shortcut icon" href="{{ site.favicon }}" >
@@ -117,8 +115,8 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif page.bigimg %}
-  <meta name="twitter:image" content="{{ site.url }}{{ page.bigimg }}" />
+  {% elsif site.avatar %}
+  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
   {% endif %}
 
   {% if site.matomo %}
