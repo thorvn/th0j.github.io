@@ -86,8 +86,8 @@
 
   {% if page.share-img %}
   <meta property="og:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta property="og:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif page.bigimg %}
+  <meta property="og:image" content="{{ site.url }}{{ page.bigimg }}" />
   {% endif %}
 
   <link rel="shortcut icon" href="{{ site.favicon }}" >
@@ -115,8 +115,8 @@
 
   {% if page.share-img %}
   <meta name="twitter:image" content="{{ page.share-img }}" />
-  {% elsif site.avatar %}
-  <meta name="twitter:image" content="{{ site.url }}{{ site.avatar }}" />
+  {% elsif page.bigimg %}
+  <meta name="twitter:image" content="{{ site.url }}{{ page.bigimg }}" />
   {% endif %}
 
   {% if site.matomo %}
