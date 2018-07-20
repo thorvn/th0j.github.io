@@ -9,7 +9,7 @@ Einstein có một câu nói rất nổi tiếng: "Nếu bạn không thể gi�
 
 Nhưng mình tin là trẻ 6 tuổi không thể hiểu được vấn đề mình nói đâu nên mình đành giải thích cho trẻ 16 tuổi vậy.
 
-![albert-einstein](/assets/images/Albert-Einstein-Quotes-4.jpg)
+![albert-einstein](/img/Albert-Einstein-Quotes-4.jpg)
 
 Trong năm 2017 vừa qua thì chắc hẳn mọi người đều nghe về Bitcoin khá nhiều từ truyền thông hay trà đá vỉa hè nhưng rất nhiều người lại không biết thứ công nghệ đằng sau nó. Hôm nay mình sẽ cố gắng giải thích cho các bạn một cách dễ hiểu nhất.
 
