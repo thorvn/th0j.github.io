@@ -808,7 +808,7 @@ a.bttn {
   padding: 15px 32px;
   margin: 0px 0px;
   /* width: 100%; */
-  cursor: context-menu;
+  cursor: default;
 }
 
 a.bttn:hover {
