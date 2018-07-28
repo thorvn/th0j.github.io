@@ -38,7 +38,7 @@ Vim có một lịch sử hoành “tờ ráng” khi bạn tìm với từ khó
 ![emacs-1](/img/emacs-1.jpg)
 ![emacs-2](/img/emacs-2.jpg)
 ![emacs-3](/img/emacs-3.jpg)
-![emacs-4](/img/emacs-4.jpg)
+![emacs-4](/img/emacs-4.png)
 
 Tui cũng mò mò tải về thử  và search ra một đống thứ emacs có thể làm được nào là đọc pdf, chơi game, lướt web, map, mail client, vẽ diagram… Rất nhiều, và tui quay lại câu hỏi cũ
 
@@ -66,7 +66,7 @@ Phải học. Vim khá khó học cho người mới bắt đầu
 ## DÀNH CHO EMACS USER
 Lướt Medium và đọc vài dòng khá là hài =))
 
-![emacs-5](/img/emacs-5.jpg)
+![emacs-5](/img/emacs-5.png)
 
 
 Vui tí thôi nhé, ở loạt bài sau mình sẽ hướng dẫn sử dụng VIM cho beginner.
