@@ -2,6 +2,8 @@
 layout: post
 title:  "Lấy nét sao cho đúng?"
 date:   2016-10-21 00:11:33 +0700
+bigimg: /img/point-of-focus.jpg
+share-img: /img/point-of-focus.jpg
 tags: [photography]
 ---
 
