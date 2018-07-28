@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Chuyện về Editor"
-date:   2017-1-7 00:11:33 +0700
-bigimg: /img/chrome-min.jpg
-share-img: /img/chrome-min.jpg
+date:   2017-6-21 00:11:33 +0700
+bigimg: /img/vim-1.jpg
+share-img: /img/vim-1.jpg
 tags: [coding]
 ---
 
@@ -27,11 +27,19 @@ Bạn có cảm thấy bực bội không? Nếu câu trả lời là:
 
 Vậy thì tui nghĩ đến đây được rồi, bạn không cần phải đọc tiếp đâu.
 ## BECOME VIMMER
+
 Tui chán ngấy cái sự chậm chạp rồi nên tui tìm kiếm cái gì đó phù hợp với tui hơn. Cũng không biết trời xui đất khiến kiểu gì, tui biết tới VIM, nước rửa bồn cầu số 1 Việt Nam!!!
 
+![vim-bon-cau](/img/vim-bon-cau.jpg)
 Ấy chết, mình nhầm mất Vim editor chứ ko phải Vim bồn cầu nhé. Ahihi
 
 Vim có một lịch sử hoành “tờ ráng” khi bạn tìm với từ khóa Editor war thì sẽ có cả mớ. Người ta so sánh Vim với Emacs, nên mình cũng mò mẫm thử xem Emacs có gì.
+
+![emacs-1](/img/emacs-1.jpg)
+![emacs-2](/img/emacs-2.jpg)
+![emacs-3](/img/emacs-3.jpg)
+![emacs-4](/img/emacs-4.jpg)
+
 Tui cũng mò mò tải về thử  và search ra một đống thứ emacs có thể làm được nào là đọc pdf, chơi game, lướt web, map, mail client, vẽ diagram… Rất nhiều, và tui quay lại câu hỏi cũ
 
     Liệu có cần thiết không?
@@ -56,6 +64,7 @@ Phải học. Vim khá khó học cho người mới bắt đầu
 ## DÀNH CHO EMACS USER
 Lướt Medium và đọc vài dòng khá là hài =))
 
+![emacs-5](/img/emacs-5.jpg)
 
 
 Vui tí thôi nhé, ở loạt bài sau mình sẽ hướng dẫn sử dụng VIM cho beginner.
