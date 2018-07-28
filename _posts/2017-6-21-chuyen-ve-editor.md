@@ -2,8 +2,8 @@
 layout: post
 title:  "Chuyện về Editor"
 date:   2017-6-21 00:11:33 +0700
-bigimg: /img/vim-1.jpg
-share-img: /img/vim-1.jpg
+bigimg: /img/vim-1.png
+share-img: /img/vim-1.png
 tags: [coding]
 ---
 
@@ -45,6 +45,8 @@ Tui cũng mò mò tải về thử  và search ra một đống thứ emacs có 
     Liệu có cần thiết không?
 
 Cuối cùng tui đến với Vim
+
+![vim-2](/img/vim-2.jpg)
 
 ## TỔNG KẾT
 
