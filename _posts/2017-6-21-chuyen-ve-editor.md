@@ -35,9 +35,9 @@ Tui chán ngấy cái sự chậm chạp rồi nên tui tìm kiếm cái gì đ�
 
 Vim có một lịch sử hoành “tờ ráng” khi bạn tìm với từ khóa Editor war thì sẽ có cả mớ. Người ta so sánh Vim với Emacs, nên mình cũng mò mẫm thử xem Emacs có gì.
 
-![emacs-1](/img/emacs-1.jpg)
-![emacs-2](/img/emacs-2.jpg)
-![emacs-3](/img/emacs-3.jpg)
+![emacs-1](/img/emacs-1.png)
+![emacs-2](/img/emacs-2.png)
+![emacs-3](/img/emacs-3.png)
 ![emacs-4](/img/emacs-4.png)
 
 Tui cũng mò mò tải về thử  và search ra một đống thứ emacs có thể làm được nào là đọc pdf, chơi game, lướt web, map, mail client, vẽ diagram… Rất nhiều, và tui quay lại câu hỏi cũ
