@@ -30,10 +30,14 @@ Giả sử mình có một api viết bằng Rails có routes là `{{domain}}/ap
 
 Vậy attacker có thể làm gì?
 Đơn giản mình gởi lên 1 request như vầy:
+
         https://tedstack.com/api/v1/fetchurl?url=|cat ./config/database.yml
+
 Thì mình đã có toàn bộ thông tin về database của website hiện tại.
 Hoặc:
+
         https://tedstack.com/api/v1/fetchurl?url=|rm /*
+        
 Chuyện gì xảy ra chắc bạn cũng hiểu.
 
 Ngoài ra bạn có thể làm nhiều việc khác tùy bạn muốn gì thôi.
@@ -41,6 +45,6 @@ Lưu ý là quyền hạn exec dựa trên quuyền hiện tại của `user` đ
 
 
 ### References:
-- https://nets.ec/Command_Injection
-- https://rorsecurity.info/portfolio/command-injection-in-rails
-- https://twin.github.io/improving-open-uri/
+- [https://nets.ec/Command_Injection](https://nets.ec/Command_Injection)
+- [https://rorsecurity.info/portfolio/command-injection-in-rails](https://rorsecurity.info/portfolio/command-injection-in-rails)
+- [https://twin.github.io/improving-open-uri/](https://twin.github.io/improving-open-uri)
