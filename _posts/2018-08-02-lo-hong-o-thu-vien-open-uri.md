@@ -14,8 +14,8 @@ Thông thường các bạn muốn đọc nội dung của một trang web thì 
 ![Open URI](/img/openuri.png)
 Đoạn code tương tự như vậy bạn sẽ gặp ở rất nhiều các bài hướng dẫn trên mạng, các hướng dẫn về crawler bằng Ruby.
 Ví dụ như:
-- https://viblo.asia/p/phan-tich-cu-phap-html-voinokogiri-mrDGMJXOezL
-- https://kipalog.com/posts/Viet-trinh-download-co-thanh-tien-trinh-voi-ruby
+- [phan-tich-cu-phap-html](https://viblo.asia/p/phan-tich-cu-phap-html-voinokogiri-mrDGMJXOezL)
+- [https://kipalog.com/posts/Viet-trinh-download-co-thanh-tien-trinh-voi-ruby](https://kipalog.com/posts/Viet-trinh-download-co-thanh-tien-trinh-voi-ruby)
 
 Nhưng thử custom lại một chút xem sao. 
 ![Open URI](/img/openuri-1.png)
@@ -30,10 +30,10 @@ Giả sử mình có một api viết bằng Rails có routes là `{{domain}}/ap
 
 Vậy attacker có thể làm gì?
 Đơn giản mình gởi lên 1 request như vầy:
-        {{domain}}/api/v1/fetchurl?url=|cat ./config/database.yml
+        https://tedstack.com/api/v1/fetchurl?url=|cat ./config/database.yml
 Thì mình đã có toàn bộ thông tin về database của website hiện tại.
 Hoặc:
-    {{domain}}/api/v1/fetchurl?url=|rm /*
+        https://tedstack.com/api/v1/fetchurl?url=|rm /*
 Chuyện gì xảy ra chắc bạn cũng hiểu.
 
 Ngoài ra bạn có thể làm nhiều việc khác tùy bạn muốn gì thôi.
