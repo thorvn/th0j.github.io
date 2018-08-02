@@ -22,7 +22,7 @@ Nhưng thử custom lại một chút xem sao.
 
 Ở đây thì thay vì hard code url mình đưa nó về  dạng params để truyền vào cho tiện thoai. Đoạn code có vẻ như vô hại nhỉ?
 Nhưng hay cẩn thận, method `open` của `openuri` là một wrapper của `Kernel#open`, và method này giúp bạn thực thi lệnh của hệ thống. Và dựa vào đây attacker có thể remote code execution.
-
+Lỗ hổng này được gọi là `command injection`. Các bạn muốn tìm hiểu thêm có thể google nhé!
 
 ### Exploitation
 Giả sử mình có một api viết bằng Rails có routes là `{{domain}}/api/v1/fetchurl?` như sau:
@@ -37,7 +37,7 @@ Thì mình đã có toàn bộ thông tin về database của website hiện t�
 Hoặc:
 
         https://tedstack.com/api/v1/fetchurl?url=|rm /*
-        
+
 Chuyện gì xảy ra chắc bạn cũng hiểu.
 
 Ngoài ra bạn có thể làm nhiều việc khác tùy bạn muốn gì thôi.
