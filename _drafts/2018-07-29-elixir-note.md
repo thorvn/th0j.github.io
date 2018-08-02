@@ -15,3 +15,12 @@ Do a security check ->
 Put on HTTP headers for a browser ->
 See what the request was trying to access ->
 Formulate and return a request
+
+### Phoenix socket
+
+One socket have multiple channel.
+Channel have 2 method: 
+  - `join`: listen the data comming over websocket channel. It call when user join a channel
+  - `handle_in`: Recieve event comming from user client.
+
+
