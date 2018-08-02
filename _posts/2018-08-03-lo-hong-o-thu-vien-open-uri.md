@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Khai thác lổ hổng ở thư viện open-uri"
-date:   2018-8-02 00:11:33 +0700
+date:   2018-8-03 00:11:33 +0700
 bigimg: /img/openuri-3.jpg
 share-img: /img/openuri-3.jpg
 tags: [programming, security, rails, commad injection, open-uri]
@@ -21,6 +21,7 @@ Nhưng thử custom lại một chút xem sao.
 ![Open URI](/img/openuri-1.png)
 
 Ở đây thì thay vì hard code url mình đưa nó về  dạng params để truyền vào cho tiện thoai. Đoạn code có vẻ như vô hại nhỉ?
+
 Nhưng hay cẩn thận, method `open` của `openuri` là một wrapper của `Kernel#open`, và method này giúp bạn thực thi một OS command. Và dựa vào đây attacker có thể remote code execution.
 Lỗ hổng này được gọi là `command injection`. Các bạn muốn tìm hiểu thêm có thể google nhé!
 
@@ -46,6 +47,7 @@ Ngoài ra bạn có thể làm nhiều việc khác như tạo một user trong 
 
 ### Tổng kết
 Đây là một lỗi cực kì nguy hiểm theo sự đánh giá của mình. Với lỗi này thì bạn thỏa sức sáng tạo với nhiều kịch bản tấn công khác nhau. Nếu bạn có kịch bản nào thú vị hơn thì chia sẻ với mình nhé.
+
 Còn nếu project của bạn đang sử dụng `open-uri` thì hãy cẩn thận.
 
 ##### Bài viết mang tính chất trao đổi và học hỏi nên hi vọng bạn không dùng nó cho mục đích xấu.
