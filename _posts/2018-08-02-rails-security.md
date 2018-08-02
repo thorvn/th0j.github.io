@@ -43,3 +43,4 @@ Lưu ý là quyền hạn exec dựa trên quuyền hiện tại của `user` đ
 ### References:
 - https://nets.ec/Command_Injection
 - https://rorsecurity.info/portfolio/command-injection-in-rails
+- https://twin.github.io/improving-open-uri/
