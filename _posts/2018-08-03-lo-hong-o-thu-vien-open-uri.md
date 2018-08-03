@@ -32,12 +32,12 @@ Giả sử mình có một api viết bằng Rails có routes là `{{domain}}/ap
 Vậy attacker có thể làm gì?
 Attacker có thể chèn một OS command đằng sau params truyền lên bằng kí tự `|`. Giả sữ OS mình host trang web mình là Unix OS như Ubuntu thì mình có thể  gởi lên 1 request như vầy:
 
-        https://tedstack.com/api/v1/fetchcontent?url=https://tedstack.com|cat ./config/database.yml
+        https://tedstack.com/fetchcontent?url=https://tedstack.com|cat ./config/postgresql_database.yaml
 
 Thì mình đã có toàn bộ thông tin về database của website hiện tại.
 Hoặc:
 
-        https://tedstack.com/api/v1/fetchcontent?url=https://tedstack.com|rm /*
+        https://tedstack.com/fetchcontent?url=https://tedstack.com|rm /*
 
 Chuyện gì xảy ra chắc bạn cũng hiểu.
 
