@@ -22,7 +22,7 @@ Nhưng thử custom lại một chút xem sao.
 
 Ở đây thì thay vì hard code url mình đưa nó về  dạng params để truyền vào cho tiện thoai. Đoạn code có vẻ như vô hại nhỉ?
 
-Nhưng hay cẩn thận, method `open` của `openuri` là một wrapper của `Kernel#open`, và method này giúp bạn thực thi một OS command. Và dựa vào đây attacker có thể remote code execution.
+Nhưng hay cẩn thận, method `open` của `openuri` kế thừa từ `Kernel#open`, với mục đích open một URL. Nếu URL bình thường từ client sẽ không được pass vào `Kernel#open`, nhưng chuyện gì xảy ra nếu client sẽ truyền lên một URL và bonous cho bạn một cái gì đó ví dụ như: `| rm -rf ~`. Dựa vào đây attacker có thể remote code execution.
 Lỗ hổng này được gọi là `command injection`. Các bạn muốn tìm hiểu thêm có thể google nhé!
 
 ### Command injection có gì nguy hiểm?
@@ -45,10 +45,15 @@ Quyền hạn exec OS command dựa trên quyền hiện tại của `user` đan
 
 Ngoài ra bạn có thể làm nhiều việc khác như tạo một user trong hệ thống và chiếm quyền điều khiển của hệ thống... Và sau đó làm gì tiếp theo thì.... tùy sự `sáng tạo` của bạn.
 
-### Tổng kết
-Đây là một lỗi cực kì nguy hiểm theo sự đánh giá của mình. Với lỗi này thì bạn thỏa sức sáng tạo với nhiều kịch bản tấn công khác nhau. Nếu bạn có kịch bản nào thú vị hơn thì chia sẻ với mình nhé.
+### Fix như thế nào?
+1. Best practice là phải validate dữ liệu để đảm bảo dữ liệu không chứ những kí tự đặc biệt như: `|`, `&`, `&&`...
+2. Hay thay function `open` của `open-uri` bằng một function khác hoặc không sử dụng thư viện này nữa và thay thế bằng 1 thư viện khác.
+Có một câu "khẩu quyết" mình rất tâm đắc đó là: `Don't trust anything from client`. Nghĩa là dữ liệu từ client gởi lên luôn được validate cẩn thận.
 
-Còn nếu project của bạn đang sử dụng `open-uri` thì hãy cẩn thận.
+### Tổng kết
+Đây là một lỗi cực kì nguy hiểm theo sự đánh giá của mình.
+Còn nếu project của bạn đang sử dụng `open-uri` thì hãy cẩn thận nhé.
+
 
 ##### Bài viết mang tính chất trao đổi và học hỏi nên hi vọng bạn không dùng nó cho mục đích xấu.
 
