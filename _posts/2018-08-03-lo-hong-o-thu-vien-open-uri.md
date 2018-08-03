@@ -61,3 +61,4 @@ Còn nếu project của bạn đang sử dụng `open-uri` thì hãy cẩn th�
 - [https://nets.ec/Command_Injection](https://nets.ec/Command_Injection)
 - [https://rorsecurity.info/portfolio/command-injection-in-rails](https://rorsecurity.info/portfolio/command-injection-in-rails)
 - [https://twin.github.io/improving-open-uri/](https://twin.github.io/improving-open-uri)
+- [https://github.com/ruby/ruby/blob/trunk/lib/open-uri.rb](https://github.com/ruby/ruby/blob/trunk/lib/open-uri.rb)
