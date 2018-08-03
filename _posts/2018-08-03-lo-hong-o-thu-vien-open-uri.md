@@ -43,7 +43,7 @@ Chuyện gì xảy ra chắc bạn cũng hiểu.
 
 Quyền hạn exec OS command dựa trên quyền hiện tại của `user` đang run website đó. Nếu website chạy trên quyền root thì chắc hiểu rồi hen.
 
-Ngoài ra bạn có thể làm nhiều việc khác như tạo một user trong hệ thống và chiếm quyền điều khiển của hệ thống... Và sau đó làm gì tiếp theo thì.... tùy sự `sáng tạo` của bạn.
+Ngoài ra bạn có thể làm nhiều việc khác như tạo một user trong hệ thống, open port 22, và bạn đã có full quyền điều khiển server roài... Và sau đó làm gì tiếp theo thì.... tùy sự `sáng tạo` của bạn.
 
 ### Fix như thế nào?
 1. Best practice là phải validate dữ liệu để đảm bảo dữ liệu không chứ những kí tự đặc biệt như: `|`, `&`, `&&`...
