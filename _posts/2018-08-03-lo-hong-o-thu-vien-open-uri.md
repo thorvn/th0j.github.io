@@ -47,7 +47,7 @@ Ngoài ra bạn có thể làm nhiều việc khác như tạo một user trong 
 
 ### Fix như thế nào?
 1. Best practice là phải validate dữ liệu để đảm bảo dữ liệu không chứ những kí tự đặc biệt như: `|`, `&`, `&&`...
-2. Hay thay function `open` của `open-uri` bằng một function khác hoặc không sử dụng thư viện này nữa và thay thế bằng 1 thư viện khác.
+2. Hay thay function `open` của `open-uri` bằng một function khác hoặc không sử dụng thư viện này nữa và thay thế bằng 1 thư viện khác. Nếu đơn giản bạn chỉ muốn một thư viện HTTP thì có thể sử dụng [Faraday](https://github.com/lostisland/faraday) để thay thế.
 Có một câu "khẩu quyết" mình rất tâm đắc đó là: `Don't trust anything from client`. Nghĩa là dữ liệu từ client gởi lên luôn được validate cẩn thận.
 
 ### Tổng kết
