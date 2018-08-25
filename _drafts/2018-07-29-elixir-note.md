@@ -24,3 +24,23 @@ Channel have 2 method:
   - `handle_in`: Recieve event comming from user client.
 
 
+### Tip
+1. How to test a function
+```bash
+iex -S mix
+```
+2. Reload iex
+```bash
+recompile
+```
+3. Debug on Phoenix
+Start phoenix server by
+```bash
+iex -S mix phx.server
+```
+Put debugger inside source code
+```elixir
+require IEx
+
+IEx.pry
+```
