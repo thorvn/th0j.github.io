@@ -2,8 +2,8 @@
 layout: post
 title:  "Tại sao tui thích Vếu"
 date:   2018-8-25 10:11:33 +0700
-bigimg: /img/tai-sao-tui-thich-veu-head.jpg.jpg
-share-img: /img/tai-sao-tui-thich-veu-head.jpg.jpg
+bigimg: /img/tai-sao-tui-thich-veu-head.jpg
+share-img: /img/tai-sao-tui-thich-veu-head.jpg
 tags: [programming, progressive framwork, react, angular, vue, veu]
 ---
 
