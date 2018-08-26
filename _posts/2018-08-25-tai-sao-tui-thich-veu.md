@@ -79,7 +79,55 @@ Ngoài ra bạn có thể sử dụng thêm webpack với các template khác nh
 Bạn nên tham khảo thêm ở: [https://github.com/vuejs-templates/webpack](https://github.com/vuejs-templates/webpack)
 
 ### Hello world với Vếu JS
-Hello world với Vếu không gì đơn giản hơn.
+
+Đầu tiên thì chúng ta cần một file HTML đơn giản như sau:
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <meta>
+    <meta charset="UTF-8">
+    <title>Hello World in Vue.js</title>
+  </meta>
+
+  <body>
+    <div id="hello-world-app">
+    </div>
+  </body>
+</html>
+```
+
+Tiếp theo chúng ta cần phải include Vếu JS vào trong file HTML. 
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+```
+
+Tiếp đến ta tạo Vếu instance bằng từ khóa `new Vue()`. Sau đó ta cần cài đặt thuộc tính cho Vếu. Thuộc tính cơ bản trong Vếu là `el` và `data`.
+
+Thuộc tính `el` nhận giá trị là một DOM element id. Việc cài đặt thuộc tính này mang ý nghĩa chúng ta sẽ quản lý DOM id này bởi Vếu instance này.
+Thuộc tính `data` nhận giá trị là một Object chứa toàn bộ data mà chúng ta sẽ sử dụng trong Vếu instance này.
+
+Để hiển thị các giá trị ở `data` properties thì `Vếu` cung cấp cho bạn một cú pháp đơn giản để hiển thị các gía trị này trên HTML đó là 2 giấu ngoặc nhọn. Ví dụ ta có một Vếu instance như sau:
+
+```html
+ <script>
+  new Vue({
+    el: "#hello-world-app",
+    data() {
+      return {
+        msg: "Hello World!"
+      }
+    }
+  });
+</script>
+```
+
+Thì để hiển thị giá trị msg lên HTML thì ở vị trí cần hiển thị bạn chỉ đơn giản gọi: `{{ msg }}
+
+Done, bạn đã hoàn thành việc viết Hello World bằng Vếu JS.
+
+Source code hoàn chỉnh bạn có thể xem bên dưới:
+
 ![vue-hello-world](/img/vue-hello-world.png)
 
 ### Tổng kết
