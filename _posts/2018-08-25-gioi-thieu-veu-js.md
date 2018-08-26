@@ -32,7 +32,7 @@ Mình chọn Vếu vì mình ko có nhu cầu sử dụng Monolithic Framework, 
 
 #### Cú pháp đẹp, ngắn gọn, rõ ràng, sạch sẽ
 
-Ban đầu mình cũng nghĩ tới React và lướt sơ về nó, mình ko thích cú pháp của JSX lắm, mình thích clean nên mình ko thích kiểu trộn lẫn HTML và JS, thật ra JSX cũng ko mix nhiều lắm, chỉ một phần nhỏ thôi, nhưng mình ko thích và ko cảm thấy có thiện cảm lắm, nên mình next luôn. Sau khi thử với Vếu thì mình thấy thích vì thấy nó khá rõ ràng, HTML + CSS + JS tách bạch nhìn rất "sạch sẽ".
+Ban đầu mình cũng nghĩ tới React và lướt sơ về nó, mình ko thích cú pháp của JSX lắm, mình thích clean nên mình ko thích kiểu trộn lẫn HTML và JS, thật ra JSX cũng ko mix nhiều lắm, chỉ một phần nhỏ thôi, nhưng mình ko thích và ko cảm thấy có thiện cảm lắm, nên mình cho next luôn. Sau khi thử với Vếu thì mình thấy thích vì thấy nó khá rõ ràng, HTML + CSS + JS tách bạch nhìn rất "sạch sẽ". Mình nghĩ bạn cũng thích dùng Vếu "sạch" đúng hăm?
 
 #### Siêu Nhẹ
 
@@ -76,5 +76,9 @@ Ngoài ra bạn có thể sử dụng thêm webpack với các template khác nh
 Bạn nên tham khảo thêm ở: [https://github.com/vuejs-templates/webpack](https://github.com/vuejs-templates/webpack)
 
 ### Hello world với Vếu JS
-
+Hello world với Vếu không gì đơn giản hơn.
 ![vue-hello-world](/img/vue-hello-world.png)
+
+### Tổng kết
+
+Đến đây thì sao, bạn có quyết định sử dụng Vếu thay vì React hay Angular giống mình không? Nếu bạn thích Vếu thì hi vọng gặp bạn ở loạt bài sau nhé.
