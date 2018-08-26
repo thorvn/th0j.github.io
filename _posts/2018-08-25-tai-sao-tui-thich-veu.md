@@ -56,7 +56,7 @@ Vếu cung cấp cho bạn full đồ nghề, không quá nhiều sự chọn l�
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
 ```
 
-#### Vue-cli
+#### VUE-CLI
 
 Đối với một project lớn thì bạn nên sử dụng Vue-CLI. Vue-CLI sẽ giúp bạn tạo ra một boilerplate với cấu trúc rõ ràng, sạch đẹp, bạn không cần phải mất thời gian ngồi cấu hình các kiểu mà chỉ cần bắt tay vào code thoai.
 Việc đầu tiên thì make sure rằng bạn có NPM/Yarn roài nhé.
