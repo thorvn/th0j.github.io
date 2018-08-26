@@ -47,7 +47,7 @@ Vếu cung cấp cho bạn full đồ nghề, không quá nhiều sự chọn l�
 ### Cài đặt Vếu JS
 
 #### CDN
-Đối với một project nhỏ hoặc chỉ cần để demo thì bạn có thể sử dụng CDN. Việc đơn giản là bạn chỉ cần include Vếu vào HTMl file của bạn như sau:
+Đối với một project nhỏ hoặc chỉ cần để demo thì bạn có thể sử dụng CDN. Việc đơn giản là bạn chỉ cần include Vếu vào HTML file của bạn như sau:
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
