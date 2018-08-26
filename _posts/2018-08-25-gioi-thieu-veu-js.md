@@ -26,22 +26,22 @@ Câu trả lời đơn giản là "bạn có phải đàn ông hay không"? Đà
 
 Đùa tí thôi, thật sự thì mình là Backend developer nên cũng ko có nhiều thời gian hoặc nhiều trải nghiệm quá để mà so sánh giữa các Framework nên mình chỉ nói lên quan điểm của mình thôi nhóe. 
 
-##### Đơn giản, linh động
+#### Đơn giản, linh động
 
 Mình chọn Vếu vì mình ko có nhu cầu sử dụng Monolithic Framework, mình cần tìm một thứ gọn nhẹ đơn giản, nên mình nhắm tới Progressive Framwork. Lúc này bạn sẽ nghĩ tại sao ko là React.
 
-##### Cú pháp đẹp, ngắn gọn, rõ ràng, sạch sẽ
+#### Cú pháp đẹp, ngắn gọn, rõ ràng, sạch sẽ
 
 Ban đầu mình cũng nghĩ tới React và lướt sơ về nó, mình ko thích cú pháp của JSX lắm, mình thích clean nên mình ko thích kiểu trộn lẫn HTML và JS, thật ra JSX cũng ko mix nhiều lắm, chỉ một phần nhỏ thôi, nhưng mình ko thích và ko cảm thấy có thiện cảm lắm, nên mình next luôn. Sau khi thử với Vếu thì mình thấy thích vì thấy nó khá rõ ràng, HTML + CSS + JS tách bạch nhìn rất "sạch sẽ".
 
-##### Siêu Nhẹ
+#### Siêu Nhẹ
 
 Ngoài ra thì Vếu không độn nên siêu nhẹ, so vs React thì một trời một vực, khoảng 17kb min. Chi tiết hơn bạn có thể xem ở [đây](https://gist.github.com/Restuta/cda69e50a853aa64912d)
 
-##### Document chi tiết
+#### Document chi tiết
 Nói về document thì Vếu quá tuyệt, document cực kì chi tiết, dễ đọc. Nếu bạn thích Vếu, bạn không cần đi đâu xa xôi, chỉ cần đọc document của Vếu là đủ.
 
-##### Hệ sinh thái
+#### Hệ sinh thái
 Vếu cung cấp cho bạn full đồ nghề, không quá nhiều sự chọn lựa để bạn không phải lăn tăn chọn cái cái này hay cái kia giống React. Bạn sẽ không còn Google kiểu như: "Redux or Mobx" hay những câu hỏi tương tự. Do đó bạn sẽ tập trung vào Vếu nhiều hơn là thắc mắc.
 
 ### Cài đặt Vếu JS
