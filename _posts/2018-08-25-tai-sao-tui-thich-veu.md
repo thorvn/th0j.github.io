@@ -21,6 +21,7 @@ Tiêu biểu cho Progressive Framwork là React JS của cụ Facebook và Vếu
 ### Vếu JS là gì?
 
 ![veu-to](/img/veu-to.jpg)
+
 Vếu JS, tên thật là Vue JS là một Progressive Javascript Framwork. Vếu tập trung vào vẻ bề ngoài (view) nhưng ngoài ra chúng ta có thể cài đặt thêm các thành phần khác như Vuex để quản lý state, hay vue-router để routing SPA hoặc... không dùng thêm gì cả.
 
 ### Why Vếu
