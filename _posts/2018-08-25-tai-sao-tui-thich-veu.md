@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Vếu JS Series - Giới thiệu về Vếu"
+title:  "Tại sao tui thích Vếu"
 date:   2018-8-25 10:11:33 +0700
-bigimg: /img/chrome-min.jpg
-share-img: /img/chrome-min.jpg
+bigimg: /img/tai-sao-tui-thich-veu-head.jpg.jpg
+share-img: /img/tai-sao-tui-thich-veu-head.jpg.jpg
 tags: [programming, progressive framwork, react, angular, vue, veu]
 ---
 
@@ -19,7 +19,7 @@ Một Monolithic Framework thật sự nặng nề, và nó đòi hỏi cần ph
 Tiêu biểu cho Progressive Framwork là React JS của cụ Facebook và Vếu JS
 
 ### Vếu JS là gì?
-Vếu JS, tên thật là Vue JS là một Javascript Progressive Framwork. Vếu tập trung vào vẻ bề ngoài (view) nhưng ngoài ra chúng ta có thể cài đặt thêm các thành phần khác như Vuex để quản lý state, hay vue-router để routing SPA hoặc... không dùng thêm gì cả.
+Vếu JS, tên thật là Vue JS là một Progressive Javascript Framwork. Vếu tập trung vào vẻ bề ngoài (view) nhưng ngoài ra chúng ta có thể cài đặt thêm các thành phần khác như Vuex để quản lý state, hay vue-router để routing SPA hoặc... không dùng thêm gì cả.
 
 ### Why Vếu
 Câu trả lời đơn giản là "bạn có phải đàn ông hay không"? Đàn ông đích thực thì nhìn ngực đầu tiên nhóe.
