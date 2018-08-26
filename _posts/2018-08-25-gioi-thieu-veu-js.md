@@ -30,20 +30,51 @@ Câu trả lời đơn giản là "bạn có phải đàn ông hay không"? Đà
 
 Mình chọn Vếu vì mình ko có nhu cầu sử dụng Monolithic Framework, mình cần tìm một thứ gọn nhẹ đơn giản, nên mình nhắm tới Progressive Framwork. Lúc này bạn sẽ nghĩ tại sao ko là React.
 
-##### Cú pháp đẹp, rõ ràng, sạch sẽ
+##### Cú pháp đẹp, ngắn gọn, rõ ràng, sạch sẽ
 
 Ban đầu mình cũng nghĩ tới React và lướt sơ về nó, mình ko thích cú pháp của JSX lắm, mình thích clean nên mình ko thích kiểu trộn lẫn HTML và JS, thật ra JSX cũng ko mix nhiều lắm, chỉ một phần nhỏ thôi, nhưng mình ko thích và ko cảm thấy có thiện cảm lắm, nên mình next luôn. Sau khi thử với Vếu thì mình thấy thích vì thấy nó khá rõ ràng, HTML + CSS + JS tách bạch nhìn rất "sạch sẽ".
 
-##### Nhẹ
+##### Siêu Nhẹ
 
-Ngoài ra thì Vếu không độn nên siêu nhẹ, so vs React thì một trời một vực, khoảng 17kb min chưa Gzip.
+Ngoài ra thì Vếu không độn nên siêu nhẹ, so vs React thì một trời một vực, khoảng 17kb min. Chi tiết hơn bạn có thể xem ở [đây](https://gist.github.com/Restuta/cda69e50a853aa64912d)
 
-##### Document đơn giản, dễ học
+##### Document chi tiết
+Nói về document thì Vếu quá tuyệt, document cực kì chi tiết, dễ đọc. Nếu bạn thích Vếu, bạn không cần đi đâu xa xôi, chỉ cần đọc document của Vếu là đủ.
 
 ##### Hệ sinh thái
-
+Vếu cung cấp cho bạn full đồ nghề, không quá nhiều sự chọn lựa để bạn không phải lăn tăn chọn cái cái này hay cái kia giống React. Bạn sẽ không còn Google kiểu như: "Redux or Mobx" hay những câu hỏi tương tự. Do đó bạn sẽ tập trung vào Vếu nhiều hơn là thắc mắc.
 
 ### Cài đặt Vếu JS
 
+##### CDN
+Đối với một project nhỏ hoặc chỉ cần để demo thì bạn có thể sử dụng CDN. Việc đơn giản là bạn chỉ cần include Vếu vào HTMl file của bạn như sau:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+```
+
+##### Vue-cli
+
+Đối với một project lớn thì bạn nên sử dụng Vue-CLI. Vue-CLI sẽ giúp bạn tạo ra một boilerplate với cấu trúc rõ ràng, sạch đẹp, bạn không cần phải mất thời gian ngồi cấu hình các kiểu mà chỉ cần bắt tay vào code thoai.
+Việc đầu tiên thì make sure rằng bạn có NPM/Yarn roài nhé.
+
+Cài đặt như sau: 
+
+```bash
+npm install -g @vue/cli
+# OR
+yarn global add @vue/cli
+```
+
+Tạo Vếu boilerplate
+
+```bash
+vue create my-project
+```
+
+Ngoài ra bạn có thể sử dụng thêm webpack với các template khác nhau.
+Bạn nên tham khảo thêm ở: [https://github.com/vuejs-templates/webpack](https://github.com/vuejs-templates/webpack)
 
 ### Hello world với Vếu JS
+
+![vue-hello-world](/img/vue-hello-world.png)
