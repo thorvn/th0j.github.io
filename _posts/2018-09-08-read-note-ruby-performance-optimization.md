@@ -2,8 +2,8 @@
 layout: post
 title:  "READ NOTE - Ruby Performance Optimization - Tại sao Ruby chậm"
 date:   2018-09-03 10:11:33 +0700
-bigimg: /img/chrome-min.jpg
-share-img: /img/chrome-min.jpg
+bigimg: /img/ruby.jpg
+share-img: /img/ruby.jpg
 tags: [programming, ruby, optimization]
 ---
 
