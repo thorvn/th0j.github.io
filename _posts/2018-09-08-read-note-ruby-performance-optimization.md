@@ -9,6 +9,8 @@ tags: [programming, ruby, optimization]
 
 ### Tại sao Ruby chậm?
 
+Các bạn lập trình viên Ruby chắc hẳn k xa lạ gì với việc Ruby chậm phải ko nhỉ? Ruby chậm, thật sự chậm, nhưng có bao giờ các bạn đặt câu hỏi tại sao ko?
+
 ```ruby
 require "benchmark"
 
