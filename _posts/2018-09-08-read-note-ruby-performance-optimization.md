@@ -25,6 +25,7 @@ puts time.round(2)
 Chạy đoạn chương trình trên với các version Ruby khác nhau thử xem ví dụ: 1.9.3, 2.0, 2.1, và 2.2.
 
 |                 | 1.9.3 | 2.0   | 2.1   | 2.2 |
+|-----------------|-------|-------|-------|-----|
 | Execution time  | 9.18  | 11.42 | 2.56  |2.43 |
 
 Các bạn có thể thấy ở các version cũ của Ruby như 1.9.3 và 2.0 thì đoạn code trên chạy cực kì chậm. Nhưng điều gì khiến nó chậm như vậy?
@@ -47,8 +48,9 @@ puts time.round(2)
 ```
 
 |                       | 1.9.3 | 2.0   | 2.1   | 2.2  |
+|-----------------------|-------|-------|-------|------|
 | GC enabled            | 9.18  | 11.42 | 2.56  | 2.43 |
-| GC disabled            | 1.14  | 1.15  | 1.19  | 1.16 |
+| GC disabled           | 1.14  | 1.15  | 1.19  | 1.16 |
 | % thời gian GC xử lý  | 88%   | 90%   | 55%   | 52%  |
 
 Bạn có thấy tại sao code chậm không? Chương trình của chúng ta dành đa số thời gian vào việc xử lý ở GC. Khoảng 90% ở các Ruby version cũ và 50% ở Ruby version mới hơn.
