@@ -9,17 +9,17 @@ tags: [programming, ruby, optimization]
 
 ### Tại sao Ruby chậm?
 
-Các bạn lập trình viên Ruby chắc hẳn k xa lạ gì với việc Ruby chậm phải ko nhỉ? Ruby chậm, thật sự chậm, nhưng có bao giờ các bạn đặt câu hỏi tại sao ko?
+Các bạn lập trình viên Ruby chắc hẳn không xa lạ gì với việc Ruby chậm phải ko nhỉ? Ruby chậm, thật sự chậm, nhưng có bao giờ các bạn đặt câu hỏi tại sao ko?
 
 ```ruby
-require "benchmark"
+require 'benchmark'
 
 num_rows = 100000
 num_cols = 10
-data = Array.new(num_rows) { Array.new(num_cols) { "x" * 1000 } }
+data = Array.new(num_rows) { Array.new(num_cols) { 'x' * 1000 } }
 
 time = Benchmark.realtime do
-  csv = data.map { |row| row.join(",") }.join("\n")
+  csv = data.map { |row| row.join(',') }.join('\n')
 end
 puts time.round(2)
 ```
@@ -35,16 +35,16 @@ Các bạn có thể thấy ở các version cũ của Ruby như 1.9.3 và 2.0 t
 Chúng ta thử chạy lại đoạn chương trình trên nhưng disable GC thử xem nhé:
 
 ```ruby
-require "benchmark"
+require 'benchmark'
 
 num_rows = 100000
 num_cols = 10
-data = Array.new(num_rows) { Array.new(num_cols) { "x"*1000 } }
+data = Array.new(num_rows) { Array.new(num_cols) { 'x' * 1000 } }
 
 GC.disable
 
 time = Benchmark.realtime do
-  csv = data.map { |row| row.join(",") }.join("\n")
+  csv = data.map { |row| row.join(',') }.join('\n')
 end
 puts time.round(2)
 ```
@@ -59,7 +59,38 @@ Bạn có thấy tại sao code chậm không? Chương trình của chúng ta d
 
 Có phải là Ruby GC chậm hay do source code chúng ta tiêu tốn quá nhiều memory? Câu trả lời là cả 2.
 
-Việc tiêu tốn quá nhiều memory là bản chất của Ruby. Đây là một hiệu ứng phụ của cách thiết kế ngôn ngữ này. "Everything is an object" có nghĩa là chương trình cần rất nhiều bộ nhớ để represent Ruby object. Ngoài ra việc GC chậm là vấn đề rất lớn trong việc phát triển Ruby, cũng rất may mắn là ở các version mới thì tốc độ GC được cải thiện đáng kể nhờ có Ruby virtual machine(VM) để precompiled code, ở các version cũ hơn thì không có VM mà đi qua syntax tree.
+Việc tiêu tốn quá nhiều memory là bản chất của Ruby. Đây là một hiệu ứng phụ của cách thiết kế ngôn ngữ này. "Everything is an object" có nghĩa là chương trình cần rất nhiều bộ nhớ để biểu diễn Ruby object. Ngoài ra việc GC chậm là vấn đề rất lớn trong việc phát triển Ruby, cũng rất may mắn là ở các version mới thì tốc độ GC được cải thiện đáng kể nhờ có Ruby virtual machine(VM) để precompiled code, ở các version cũ hơn thì không có VM mà đi qua syntax tree.
+
+Okey, quay trở lại ví dụ trên và xem thử tại sao GC lại cần quá nhiều thời gian như vậy nhé.
+Như chúng ta đã biết rằng GC tốn khá nhiều thời gian cho việc dọn dẹp bộ nhớ thì chúng ta có thể kiểm tra xem với đoạn chương trình trên thì đã tiêu tốn hết bao nhiêu bộ nhớ nhé. Chúng ta sẽ kiểm tra kích thước bộ nhớ trước và sau đoạn code cần benchmark. Chúng ta sẽ in ra giá trị của process's RSS (Resident Set Size). Ở Linux hay MacOS thì chúng ta có thể lấy giá trị của RSS bằng command ps:
+
+```ruby
+puts "%dM" % `ps -o rss= -p #{Process.pid}`.to_i
+```
+
+Nhúng vào source code cần benchmark như sau:
+
+```ruby
+require 'benchmark'
+
+num_rows = 100000
+num_cols = 10
+data = Array.new(num_rows) { Array.new(num_cols) { 'x' * 1000 } }
+
+puts "%d MB" % (`ps -o rss= -p #{Process.pid}`.to_i/1024)
+
+time = Benchmark.realtime do
+  csv = data.map { |row| row.join(',') }.join('\n')
+end
+
+puts "%d MB" % (`ps -o rss= -p #{Process.pid}`.to_i/1024)
+
+puts time.round(2)
+```
+
+Kết quả của đoạn chương trình trên là: `1040 MB` và `2958 MB`
+
+Well, chúng ta đã tốn 2GB bộ nhớ để xử lý 1GB dữ liệu. Đó là lý do mà tại sao GC tiêu tốn quá nhiều thời gian để xử lý như vậy. Nhưng tại sao? Có cách nào để sử dụng ít bộ nhớ hơn ko? Nếu cảm thấy thú vị hãy đọc tiếp phần sau nhé.
 
 ### Tối ưu bộ nhớ
 
@@ -73,10 +104,10 @@ Vậy thì chúng ta se refactor lại và ko sử dụng bộ nhớ trung gian 
 
 
 ```ruby
-require "benchmark"
+require 'benchmark'
 num_rows = 100000
 num_cols = 10
-data = Array.new(num_rows) { Array.new(num_cols) { "x" * 1000 } }
+data = Array.new(num_rows) { Array.new(num_cols) { 'x'* 1000 } }
 
 time = Benchmark.realtime do
   csv = ''
@@ -84,9 +115,9 @@ time = Benchmark.realtime do
   num_rows.times do |i|
     num_cols.times do |j|
       csv << data[i][j]
-      csv << "," unless j == num_cols - 1
+      csv << ',' unless j == num_cols - 1
     end
-    csv << "\n" unless i == num_rows - 1
+    csv << '\n' unless i == num_rows - 1
   end
 end
 
