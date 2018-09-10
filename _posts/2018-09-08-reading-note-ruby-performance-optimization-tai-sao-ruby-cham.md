@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "READ NOTE - Ruby Performance Optimization - Tại sao Ruby chậm"
+title:  "READING NOTE - Ruby Performance Optimization - Tại sao Ruby chậm"
 date:   2018-09-03 10:11:33 +0700
 bigimg: /img/ruby.jpg
 share-img: /img/ruby.jpg
