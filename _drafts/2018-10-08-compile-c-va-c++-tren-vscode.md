@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Compile C++ trên VSCode"
+title:  "Compile C/C++ trên VSCode"
 date:   2018-10-08 10:11:33 +0700
 bigimg: /img/ruby.jpg
 share-img: /img/ruby.jpg
@@ -47,5 +47,3 @@ Nhưng lúc này bạn sẽ gặp một vấn đề là bạn thấy xuất hi�
 ```
 
 Ok fine, lưu lại và run source code xem nào. Tất cả các file sau khi compile đều đã được quăng vào thư mục `bin` đúng không nào, giờ thì cây thu mục quá đẹp đúng ko?
-
-### References
