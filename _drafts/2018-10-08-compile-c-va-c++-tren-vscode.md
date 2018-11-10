@@ -27,7 +27,7 @@ Tui cảm thấy cách compile khá là thủ công do đó tui muốn tích h�
 ```json
 "code-runner.runInTerminal": true,
 "code-runner.executorMap": {
-    "c": "gcc $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
+    "c": "g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt",
     "cpp": "g++ $fileName -o $fileNameWithoutExt && ./$fileNameWithoutExt"
 },
 ```
@@ -41,9 +41,18 @@ Nhưng lúc này bạn sẽ gặp một vấn đề là bạn thấy xuất hi�
 ```json
 "code-runner.runInTerminal": true,
 "code-runner.executorMap": {
-    "c": "gcc $fileName -o bin/$fileNameWithoutExt && bin/$fileNameWithoutExt",
+    "c": "g++ $fileName -o bin/$fileNameWithoutExt && bin/$fileNameWithoutExt",
     "cpp": "g++ $fileName -o bin/$fileNameWithoutExt && bin/$fileNameWithoutExt"
 },
 ```
 
 Ok fine, lưu lại và run source code xem nào. Tất cả các file sau khi compile đều đã được quăng vào thư mục `bin` đúng không nào, giờ thì cây thu mục quá đẹp đúng ko?
+
+### Note 
+Trước đây mình dùng gcc để compile file `*.c` nhưng không hiểu sao gặp vài lỗi compile linh tinh mà ko hiểu lý do(có lẽ sẽ tìm hiểu sau). Mình đã thử dùng Clang trên MacOS và GNU GCC nhưng không khắc phục được. Sau đó đã mình đổi gcc thành g++ và mọi thứ hoạt động trở lại cả trên Clang và GNU GCC, nhưng trên Clang vẫn còn 1 số warning.
+
+### Cài đặt GNU GCC trên MacOS
+Sử dụng `brew install gcc` để cài đặt GNU GCC.
+Sau khi cài đặt xong thì gcc sẽ nằm ở thư mục `/usr/local/Cellar/gcc`. Bạn có thể truy cập vào thư mục version của gcc sau đó tìm thư mục bin để sử dụng. Ở hiện tại mình vừa cài đặt GNU GCC 8.2, mình sẽ có đường dẫn như sau:  `/usr/local/Cellar/gcc/8.2.0/bin/gcc-8`.
+Như các bạn thấy thì GNU GCC không cài đặt đè trực tiếp lên Clang mà tạo ra 1 file bin khác tên là `gcc-8`.
+Do đó bạn có thể dùng gcc(Clang) hay gcc-8(Gnu) để compile đề được.
