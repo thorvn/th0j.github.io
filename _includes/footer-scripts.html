@@ -12,7 +12,7 @@
 
 {% if page.js %}
   {% for js in page.js %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script async src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
   {% endfor %}
 {% endif %}
 
@@ -20,15 +20,20 @@
   {% for js in layout.common-js %}
     <!-- doing something a bit funky here because I want to be careful not to include JQuery twice! -->
     {% if js contains 'jquery' %}
-      <script>
+      <script type="application/ld+json">
       	if (typeof jQuery == 'undefined') {
       	  document.write('<script src="{{ js | prepend: site.baseurl | replace: "//", "/" }}"></scr' + 'ipt>');
       	}
       </script>
     {% else %}
-	<script src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
+	<script async src="{{ js | prepend: site.baseurl | replace: '//', '/' }}"></script>
     {% endif %}
   {% endfor %}
 {% endif %}
 
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 {% include google_analytics.html %}
