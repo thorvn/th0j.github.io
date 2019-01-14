@@ -77,6 +77,14 @@ Monitor and makesure clients don't use any deprecated APIs before shutdown it.
 - Successful DELETE requests will usually generate 200 (if the deleted resource is returned) or 204 (if no content is returned)
 - Failed DELETE requests will usually generate 404 (if the resource cannot be found) or 410 (if the resource was already deleted before)
 
+
+# API authentication
+1. Don't put `API key` inside URL as `query parameters` because proxies and all involved systems are likely to store it into their logs. Better places are Header or Payload.
+2. Don't use JWT:
+ - JWT size could be larger than session ID. It could affect network performance since it is included each HTTP request(that is a ~51x size inflation).
+ - Require CPU to compute cryptographic signatures
+ - You’re going to hit the database anyway
+
 # References
 - https://restfulapi.net/versioning/ 
 - https://semver.org/
